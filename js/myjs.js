@@ -1,11 +1,11 @@
 /**
- * Created by RedSpite on 2016/9/12.
+ * Created by hbyszwhs on 2020/9/27.
  */
 
 $(function() {
     var errors = ' <!--[if lte IE 9]> '
         +'  <script type="text/javascript">'
-        +'      window.location = "http://www.xiaoyuezhang.com/error.html"'
+        +'      window.location = "../HttpErrors/404.html"'
         +'  </script>'
         +'<![endif]-->';
     $("head").append(errors);

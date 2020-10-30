@@ -187,19 +187,19 @@ body{
     }
 }
 .bg-img li:nth-child(1){
-    background: url(../image/bg1.jpg) no-repeat center ;
+    background: url(../image/s21.jpg) no-repeat center ;
     background-size: cover;
 }
 .bg-img li:nth-child(2){
-    background: url(../image/bg2.jpg) no-repeat center ;
+    background: url(../image/s22.jpg) no-repeat center ;
     background-size: cover;
 }
 .bg-img li:nth-child(3){
-    background: url(../image/bg3.jpg) no-repeat center ;
+    background: url(../image/s23.jpg) no-repeat center ;
     background-size: cover;
 }
 .bg-img li:nth-child(4){
-    background: url(../image/bg4.jpg) no-repeat center ;
+    background: url(../image/s24.jpg) no-repeat center ;
     background-size: cover;
 }
 #section1 h3{
