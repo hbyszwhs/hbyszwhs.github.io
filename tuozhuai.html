@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>拖拽小方块</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: #f00;
+            position: absolute;
+            left: 300px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+<script>
+    /* 
+        创建一个div块，用鼠标事件实现拖拽功能。需求：
+        1）当鼠标放在div块上时，按下鼠标左键并移动鼠标，div块随之运动；
+        2）当鼠标左键松开时，div块运动停止
+    */
+    var oBox = document.getElementById('box');
+    var wh = window.innerHeight;
+    var ww = window.innerWidth;
+
+    // 当鼠标在目标DOM按下鼠标左键时
+    oBox.onmousedown = function(e){
+        var e = e || window.event;
+
+        // 获取鼠标按下时相对于当前操作的DOM的坐标值
+        var distanceX = e.clientX - this.offsetLeft;
+        var distanceY = e.clientY - this.offsetTop;
+        console.log(distanceX,distanceY);   //按下鼠标的当前坐标值
+
+        // 当移动鼠标时
+        document.onmousemove = function(event){
+            var ev = event || window.event;
+            var left = ev.clientX - distanceX;
+            var top = ev.clientY - distanceY;
+
+            // 不让操作的DOM超出可视区
+            if (left < 0) left = 0;
+            if (top < 0) top = 0;
+            if (left > ww - oBox.offsetWidth)   left = ww - oBox.offsetWidth;
+            if (top > wh - oBox.offsetWidth)    top = wh - oBox.offsetWidth;
+
+            oBox.style.left = left + 'px';
+            oBox.style.top = top + 'px';
+
+            document.onmouseup = function(){
+                document.onmousemove = null;
+                document.onmouseup = null;
+            };
+        };
+    };
+</script>
+</html>

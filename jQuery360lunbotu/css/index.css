@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header{
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  font-family: '微软雅黑';
+  color: #FFF;
+  text-align: center;
+  background: #333;
+  background: rgba(47, 47, 47, 0.98);
+  font-weight: bold;
+  padding: 10px;
+}
+footer {
+  height: 50px;
+  color: #FFF;
+  padding-top: 25px;
+  line-height: 28px;
+  text-align: center;
+  font-family: '微软雅黑';
+  background: url(../images/footer.jpg) repeat-x top left;
+}
+.roundabout-holder {
+  margin: 0 auto;
+  width: 800px;
+  height: 496px;
+}
+.roundabout-moveable-item {
+  border-radius: 4px;
+  border: 3px solid rgba(0, 0, 0, 0.08);
+  width: 646px;
+  height: 416px;
+  cursor: pointer;
+}
+.roundabout-moveable-item img{
+  width: 100%;
+}
+.roundabout-in-focus {
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}

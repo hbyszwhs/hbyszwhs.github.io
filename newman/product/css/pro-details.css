@@ -1,0 +1,46 @@
+.crumbs-nav a.more {
+    color: #01a1ff;
+    text-transform: uppercase;
+}
+.crumbs-nav a.more span {
+    font-size: 21px;
+}
+.pro-details {
+    margin: 60px 20px 0;
+    overflow: hidden;
+}
+.pro-details img {
+    padding: 50px 0 40px;
+    border: 1px solid #ccc;
+    float: left;
+}
+.pro-details .pro-description {
+    width: 460px;
+    float: right;
+}
+.pro-details .pro-description h2 {
+    font-size: 26px;
+    color: #333;
+    padding: 26px 0 12px;
+}
+.pro-details .pro-description p {
+    color: #d73240;
+    font-size: 14px;
+    padding: 2px 10px 20px 0;
+    border-bottom: 1px solid #d3d3d3;
+}
+.pro-details .pro-description ul {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+.pro-details .pro-description ul li {
+    line-height: 30px;
+    overflow: hidden;
+}
+.pro-details .pro-description ul li .pro-desc-title {
+    float: left;
+}
+.pro-details .pro-description ul li .pro-desc-content {
+    float: left;
+}

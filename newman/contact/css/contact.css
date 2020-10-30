@@ -1,0 +1,88 @@
+.contact-service {
+    text-align: center;
+    color: #01a1ff;
+}
+.contact-service p:first-child {
+    width: 143px;
+    font: 14px Tahoma;
+    font-weight: bold;
+    line-height: 24px;
+    border-bottom: 2px solid #01a1ff;
+    margin: 18px auto 0;
+}
+.contact-service p+p {
+    margin: 6px 0 20px;
+}
+.map-contact {
+    padding: 40px 20px 0;
+    overflow: hidden;
+}
+#map {
+    margin-bottom: 30px;
+}
+.map-contact form {
+    float: left;
+    width: 550px;
+    font: 16px 宋体;
+    color: #666;
+}
+.map-contact form h2 {
+    font: 20px 微软雅黑;
+    color: #333;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.map-contact form label {
+    display: inline-block;
+    width: 57px;
+    text-align: right;
+    line-height: 36px;
+}
+.map-contact form input {
+    width: 259px;
+    height: 25px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+.map-contact form label.contact {
+    vertical-align: top;
+}
+.map-contact form textarea {
+    width: 423px;
+    height: 94px;
+    display: inline-block;
+    margin: 5px 0 10px -8px;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;           /*不让留言框改变大小*/
+}
+.map-contact form input[type=submit] {
+    width: 97px;
+    height: 30px;
+    margin: 0 20px 0 56px;
+    background-color: #01a1ff;
+    color: #fff;
+    border: 0;
+}
+.map-contact form input[type=reset] {
+    width: 97px;
+    height: 30px;
+    border: 1px solid #01a1ff;
+    background-color: #fff;
+    color: #999;
+}
+.contact-info {
+    float: right;
+    width: 373px;
+}
+.contact-info h2 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+.contact-info p {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #666;
+}
